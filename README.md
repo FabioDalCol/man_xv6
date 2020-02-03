@@ -2,7 +2,7 @@
 A simplified version of **man** for xv6.
 
 ## Building directory structure  
-First of all, **init** has been edited to execute at startup a process called **manbuild** which check if **man **working directories are present and eventually generates them.  
+First of all, **init** has been edited to execute at startup a process called **manbuild** which check if **man** working directories are present and eventually generates them.  
 */manpages* directory contains 8 subdirectories (man1,man2,man3,man4,man5,man6,man7,man8), one for each man section.
 
 ## man
