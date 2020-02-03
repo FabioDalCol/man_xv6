@@ -1,26 +1,27 @@
 # Xv6 man implementation
-A simplified version of **man **for xv6.
+A simplified version of **man** for xv6.
 
 ## Building directory structure
 First of all, **init** has been edited to execute at startup a process called **manbuild** which check if **man **working directories are present and eventually generates them.
+
 */manpages* directory contains 8 subdirectories (man1,man2,man3,man4,man5,man6,man7,man8), one for each man section.
 
 ## man
 
 Like in the orginal version manpages are organized in 8 section as follows:
 
-|Section  | Type  |
+| Section  | Type  |
 | :-----|: ------- |
-|1|Executable or shell programs |
-|2| System calls  |
-|3|Library calls   |
-|4|Special files   |
-|5| File formats  |
-|6|Games   |
-|7| Miscellaneous  |
-|8|System administration commands |
+| 1 | Executable or shell programs |
+| 2 | System calls |
+| 3 | Library calls |
+| 4 | Special files |
+| 5 | File formats |
+| 6 | Games |
+| 7 | Miscellaneous |
+| 8 | System administration commands |
 
-###Options
+### Options
 **man [command name]**
 Passing the man command followed by a command name without any option will output the first matching man page.
 
@@ -50,7 +51,13 @@ At the end the new page will be stored in the corrisponding man section.
 
 Man page for **man** has been added to the main folder of this lab. A small portion of code has been added to **manbuild** to move this man page to the correct directory when xv6 boots for the first time.
 
-In the shell type: **man man** to display the manuale page of **man**.
+In the shell type:
+
+```bash
+man man
+```
+
+to display the manuale page of **man**.
 To test other parameters of **man** it is convenient to add new man pages through **manadd**.
 
 ## Extra
