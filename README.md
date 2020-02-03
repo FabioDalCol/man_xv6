@@ -10,8 +10,9 @@ First of all, **init** has been edited to execute at startup a process called **
 
 Like in the orginal version manpages are organized in 8 section as follows:
 
-| Section  | Type  |
-| :-----|: ------- |
+
+| Section | Type |
+| ------ | ------ |
 | 1 | Executable or shell programs |
 | 2 | System calls |
 | 3 | Library calls |
@@ -21,17 +22,18 @@ Like in the orginal version manpages are organized in 8 section as follows:
 | 7 | Miscellaneous |
 | 8 | System administration commands |
 
+
 ### Options
-**man [command name]**
+**man [command name]** 
 Passing the man command followed by a command name without any option will output the first matching man page.
 
-**man [section number] [command name]**
+**man [section number] [command name]** 
 Passing the man command followed by section number followed by a command name will outuput the corrisponding man page from the section chosen.
 
 **man -f [command name]** 
 Output all the corrisponding man pages followed by the section number in which are contained.
 
-**man -w [command name]** 
+**man -w [command name]**  
 Returns the locations in which the man pages of a given command is present.
 
 ## manadd
