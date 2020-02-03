@@ -1,15 +1,13 @@
-# Xv6 man implementation
+# Xv6 man implementation  
 A simplified version of **man** for xv6.
 
-## Building directory structure
-First of all, **init** has been edited to execute at startup a process called **manbuild** which check if **man **working directories are present and eventually generates them.
-
+## Building directory structure  
+First of all, **init** has been edited to execute at startup a process called **manbuild** which check if **man **working directories are present and eventually generates them.  
 */manpages* directory contains 8 subdirectories (man1,man2,man3,man4,man5,man6,man7,man8), one for each man section.
 
 ## man
 
 Like in the orginal version manpages are organized in 8 section as follows:
-
 
 | Section | Type |
 | ------ | ------ |
@@ -23,14 +21,14 @@ Like in the orginal version manpages are organized in 8 section as follows:
 | 8 | System administration commands |
 
 
-### Options
-**man [command name]** 
+### Options  
+**man [command name]**   
 Passing the man command followed by a command name without any option will output the first matching man page.
 
-**man [section number] [command name]** 
+**man [section number] [command name]**  
 Passing the man command followed by section number followed by a command name will outuput the corrisponding man page from the section chosen.
 
-**man -f [command name]** 
+**man -f [command name]**  
 Output all the corrisponding man pages followed by the section number in which are contained.
 
 **man -w [command name]**  
@@ -59,12 +57,12 @@ In the shell type:
 man man
 ```
 
-to display the manuale page of **man**.
+to display the manuale page of **man**.  
 To test other parameters of **man** it is convenient to add new man pages through **manadd**.
 
 ## Extra
 
-Function ***strcat()*** (used to attach two strings) has been added to **ulib** and decladered in **user.h**.
+Function ***strcat()*** (used to attach two strings) has been added to **ulib** and decladered in **user.h**.  
 Credits for the code of this function goes to: 
 
 Aurelien Vallee
