@@ -44,7 +44,7 @@ The syntax to add a new man page is the following:
 
 **manadd [section number] [command name]**
 
-It is then possible to write, using the console, each paragraf of the man page. When drafting of a paragraf has ended is sufficient to send the char '&' on a new line to skip to the next paragraf. 
+It is then possible to write, using the console, each paragraf of the man page. When drafting of a paragraf has ended is sufficient to send the char '&' on a new line to skip to the next paragraf.   
 At the end the new page will be stored in the corrisponding man section.
 
 ## Testing
