@@ -7,7 +7,7 @@ First of all, **init** has been edited to execute at startup a process called **
 
 ## man
 
-Like in the orginal version manpages are organized in 8 section as follows:
+Like in the original version man pages are organized in 8 section as follows:
 
 | Section | Type |
 | ------ | ------ |
@@ -26,26 +26,26 @@ Like in the orginal version manpages are organized in 8 section as follows:
 Passing the man command followed by a command name without any option will output the first matching man page.
 
 **man [section number] [command name]**  
-Passing the man command followed by section number followed by a command name will outuput the corrisponding man page from the section chosen.
+Passing the man command followed by section number followed by a command name will output the corresponding man page from the section chosen.
 
 **man -f [command name]**  
-Output all the corrisponding man pages followed by the section number in which are contained.
+Display all the corresponding man pages followed by the section number in which are contained.
 
 **man -w [command name]**  
 Returns the locations in which the man pages of a given command is present.
 
 ## manadd
 
-To simplfy the process of adding a new man page, a specific tool has been developed: **manadd**.
+To simplify the process of adding a new man page, a specific tool has been developed: **manadd**.
 
-Each man page is divided in 5 paragrafs: **NAME**, **SYNOPSIS**, **DESCRIPTION**, **OPTIONS**, **AUTHOR**.
+Each man page is divided in 5 paragraphs: **NAME**, **SYNOPSIS**, **DESCRIPTION**, **OPTIONS**, **AUTHOR**.
 
 The syntax to add a new man page is the following:
 
 **manadd [section number] [command name]**
 
-It is then possible to write, using the console, each paragraf of the man page. When drafting of a paragraf has ended is sufficient to send the char '&' on a new line to skip to the next paragraf.   
-At the end the new page will be stored in the corrisponding man section.
+It is then possible to write, using the console, each paragraph of the man page. When the drafting of a paragraph has ended is sufficient to send the char '&' on a new line to skip to the next paragraph.   
+At the end, the new page will be stored in the corresponding man section.
 
 ## Testing
 
@@ -57,13 +57,15 @@ In the shell type:
 man man
 ```
 
-to display the manuale page of **man**.  
+to display the manual page of **man**.  
+
 To test other parameters of **man** it is convenient to add new man pages through **manadd**.
 
 ## Extra
 
-Function ***strcat()*** (used to attach two strings) has been added to **ulib** and decladered in **user.h**.  
+Function ***strcat()*** (used to attach two strings) has been added to **ulib** and declared in **user.h**.  
 Credits for the code of this function goes to: 
 
 Aurelien Vallee
 https://github.com/NewbiZ/xv6/blob/master/distrib/ulibc/src/string/strcat.c
+
