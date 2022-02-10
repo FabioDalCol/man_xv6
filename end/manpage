@@ -1,0 +1,39 @@
+
+          MANPAGE for: man
+
+NAME
+man - an interface to command manuals.
+
+SYNOPSIS
+man [command name]
+man [section number] [command name]
+man -f [command name]
+man -w [command name]
+
+DESCRIPTION
+man is the system's manual pager. Each page argument given to man is normally the name of a program, utility or function.
+Pages are organized in section, each section has a number.
+
+The table below shows the section numbers of the manual followed by the types of page they contain:
+
+  1 Executable or shell programs
+  2 System calls
+  3 Library calls
+  4 Special files
+  5 File formats
+  6 Games
+  7 Miscellaneous
+  8 System administration commands
+
+OPTIONS
+Passing the man command followed by a command name without options will output the first matching man page.
+
+Passing the man command followed by section number followed by a command name will outuput the corresponding manpage from the section chosen.
+
+-f display all the corresponding man pages followed by their section.
+
+-w returns the locations in which the man pages of a given command is present.
+
+AUTHOR
+Fabio Dal Col
+
